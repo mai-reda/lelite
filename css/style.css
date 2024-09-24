@@ -285,7 +285,63 @@ nav.navbar{margin: 20px auto 30px}
 }
 .navbar-nav .dropdown-menu li:first-of-type .dropdown-item{padding-top: 13px}
 .navbar-nav .dropdown-menu li:last-of-type .dropdown-item{padding-bottom: 13px}
-.navbar-nav .nav-item:last-of-type .dropdown-menu{min-width: 90px}
+.navbar-nav .nav-item:last-of-type .dropdown-menu{min-width: 85px}
+.page-header{
+    width: 100%;background-image: url(../img/page-header.png);
+    background-repeat: no-repeat;background-size: cover;padding: 100px 0
+}
+.page-header-box{background-color: #fff;padding: 20px}
+.the-title4{
+    color: #7A7A7A;font-size: 20px;padding: 15px;border: 1px solid #C7C7C7;
+    font-weight: 700;display: inline-block;margin-bottom: 20px
+}
+.page-header-box h2{font-weight: 700;font-size: 36px;text-transform: capitalize;line-height: 50px;margin: 5px 0}
+.page-header-box p{color: #535353;font-size: 16px;margin-top: 10px}
+.the-text{font-size: 24px;line-height: 36px;}
+.one-service p{font-size: 20px;line-height: 30px}
+.why-us h4{font-size: 32px;font-weight: 700;margin-top: 60px}
+.why-us h6{font-size: 16px;color: #535353}
+.why-us{margin-bottom: 40px}
+.why-us-section{margin-bottom: 70px;margin-top: 45px}
+.why-us img{width: 100%}
+.article-img img{width: 100%}
+.breadcrumb-item+.breadcrumb-item::before{content: var(--bs-breadcrumb-divider, "-");}
+.breadcrumb-item.active{color: #38DACA}
+.breadcrumb-item a{color: #535353;font-size: 14px;text-decoration: none}
+.back-btn a{color: #535353;font-size: 14px;text-decoration: none}
+.back-btn{margin-bottom: 20px}
+.article-title h2{font-size: 40px;font-weight: 700;color: #303030;margin-top: 20px;margin-bottom: 15px}
+.article-title p{font-size: 16px;color: #303030}
+.article-details h3{font-size: 24px;font-weight: 700;padding-top: 30px;margin-bottom: 20px}
+.article-details-img{width: 100%;margin-bottom: 20px}
+.article-contents{border: 1px solid #E8E8E8}
+.the-border{width: 100%;height: 1px;background-color: #E8E8E8;margin-bottom: 10px}
+.article-contents span{font-size: 20px;font-weight: 700;display: block;padding: 20px}
+.article-contents a img{height: 8px}
+.article-contents a{display: block;color: #303030;font-size: 16px;text-decoration: none;margin: 20px}
+.article-contents{padding-bottom: 10px}
+.the-title5{text-align: center}
+.main-blog .snip1585.one-blog h5{font-size: 40px;line-height: 60px;max-width: 960px}
+.main-blog .snip1585.one-blog h6{font-size: 20px}
+.main-blog .snip1585.one-blog span{font-size: 20px}
+.main-blog .snip1585.one-blog img{width: 100%}
+.main-blog .snip1585.one-blog{max-height: 550px}
+.the-checkout h3{font-size: 32px}
+.form-title{color: #535353;font-size: 20px;margin-top: 20px;margin-bottom: 15px}
+.form-label{font-size: 16px;font-weight: 700}
+.form-control{min-height: 50px;border-radius: 0}
+.continue-payment{border: 1px solid #E8E8E8;padding: 20px}
+.product-payment img{height: 64px}
+.product-payment{display: flex;margin-bottom: 20px}
+.product-payment p{margin: 7px 0 5px;font-size: 14px;color: #000}
+.product-payment span{color: #535353;font-size: 14px}
+.payment-price{font-size: 16px;font-weight: 700;color: #000;display: flex;align-items: center}
+.the-payment{display: flex;margin-bottom: 15px;margin-top: 15px}
+.the-payment div{color: #535353;font-size: 20px;font-weight: 400}
+.the-payment span{color: #303030;font-size: 20px;font-weight: 700}
+.continue-payment .the-btn{padding: 13px 25px;font-size: 20px;display: block;width: 100%;margin-top: 40px}
+.payment-btn{display: none}
+.form-control:focus{box-shadow: none;border-color: #ced4da}
 /* start responsive */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -311,6 +367,10 @@ nav.navbar{margin: 20px auto 30px}
         background-size: 63%;
     }
     .navbar-nav .dropdown-menu{text-align: center;border-top: 1px solid #38daca}
+    .why-us h4{margin-top: 0;font-size: 25px}
+    .the-text {font-size: 19px;line-height: 28px;}
+    .article-title h2{font-size: 25px}
+    .article-details h3{font-size: 20px}
 }
 
 /* Medium Devices, Desktops */
@@ -330,6 +390,23 @@ nav.navbar{margin: 20px auto 30px}
     .offers .snip1585 figcaption h4{font-size: 20px}
     .offers .snip1585 figcaption p{font-size: 14px}
     .offers .snip1585 figcaption .the-btn2{font-size: 12px;padding: 10px}
+    .article-details > div:nth-child(1){order: 2}
+    .article-details > div:nth-child(2){order: 1}
+    .article-contents{margin-top: 20px}
+    .article-contents span{font-size: 18px}
+    .the-checkout > div:nth-child(2){order: 3}
+    .the-checkout > div:nth-child(3){order: 2}
+    .continue-payment .the-btn{display: none}
+    .payment-btn{display: block}
+    .payment-btn .the-btn{width: 100%;margin-top: 40px;font-size: 16px}
+    .continue-payment{padding: 0;border: 0}
+    .the-payment div{font-size: 16px}
+    .the-payment span{font-size: 16px}
+    .form-title{font-size: 18px}
+    .mb-3.mt-3 {
+        margin-top: 10px !important;
+        margin-bottom: 10px ! IMPORTANT;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -379,6 +456,33 @@ nav.navbar{margin: 20px auto 30px}
     .social-list li{margin-right: 0.5rem!important}
     .the-footer{padding-top: 60px}
     .copyrights{padding-bottom: 25px;margin-top: 40px}
+    .the-title4{font-size: 14px}
+    .page-header-box .the-title4{margin-bottom: 10px}
+    .page-header-box h2{font-size: 20px;line-height: 30px}
+    .page-header-box p{font-size: 14px}
+    .the-text{font-size: 14px;line-height: 21px}
+    .page-header{padding: 50px 0}
+    .one-service p{font-size: 16px;line-height: 24px}
+    .why-us-section{margin-top: 15px}
+    .why-us > div:nth-child(1){order: 2}
+    .why-us > div:nth-child(2){order: 1}
+    .why-us{text-align: center;margin-bottom: 10px}
+    .why-us h4{font-size: 20px;margin-top: 15px}
+    .why-us h6{margin-top: 10px;margin-bottom: 15px}
+    .breadcrumbs{display: none}
+    .article-title h2{font-size: 20px;margin-bottom: 10px}
+    .row .article-title{order: 1}
+    .row .article-img{order: 2}
+    .article-title span{font-size: 13px}
+    .article-title img{height: 15px}
+    .article-img{margin-top: 20px}
+    .article-contents a{margin:10px;font-size: 14px}
+    .article-contents span{padding: 10px;font-size: 16px}
+    .article-details h3{margin-bottom: 10px;padding-top: 15px}
+    .the-title5 span{font-size: 14px}
+    .main-blog .snip1585.one-blog h5{font-size: 20px;line-height: 30px;}
+    .main-blog .snip1585.one-blog h6{font-size: 10px}
+    .main-blog .snip1585.one-blog span{font-size: 10px}
 }
 
 /* Extra Small Devices, Phones */ 

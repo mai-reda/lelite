@@ -31,6 +31,7 @@ body{font-family: "Dubai", sans-serif;}
 .snip1585 figcaption{padding: 0 20px 20px 5px;}
 .social-list li{margin-right: 0!important;margin-left: 0.5rem!important}
 .the-btn2 img{transform: rotate(180deg);}
+.back-btn img{transform: rotate(180deg);}
 @media only screen and (max-width : 1200px) {
     .navbar-collapse {
         left: initial;right: -200px
