@@ -274,6 +274,17 @@ nav.navbar{margin: 20px auto 30px}
 .navbar-toggler:focus{box-shadow: none}
 .faq-img2{display: none}
 .social1{display: none}
+.logo-xl{display: none}
+.logo-xl img{height: 55px;margin: 20px auto 10px}
+.navbar-nav .dropdown-menu {
+    border: 1px solid #eeeeee;
+    border-top: 3px solid #38daca;
+    border-radius: 0;
+    text-align: center;
+    padding: 0
+}
+.navbar-nav .dropdown-menu li:first-of-type .dropdown-item{padding-top: 13px}
+.navbar-nav .dropdown-menu li:last-of-type .dropdown-item{padding-bottom: 13px}
 /* start responsive */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -282,6 +293,23 @@ nav.navbar{margin: 20px auto 30px}
         font-size: 50px;
         line-height: 54px;
     }
+    .navbar-collapse {
+        position: fixed;
+        top: -15px;
+        left: -200px;z-index: 999;
+        background-color: #fbfbfb;min-height: 100vh;transition: left 300ms;
+    }
+    .toggle-menu {
+        left: 0;border: 1px solid #eee;width: 200px;text-align: center;border-top: 0
+    }
+    .toggle-menu .the-btn{margin: 5px auto;font-size: 18px}
+    .logo-xl{display: block}
+    .navbar-toggler-icon-2 {
+        background-image: url(../img/close.png);
+        background-repeat: no-repeat;
+        background-size: 63%;
+    }
+    .navbar-nav .dropdown-menu{text-align: center;border-top: 1px solid #38daca}
 }
 
 /* Medium Devices, Desktops */

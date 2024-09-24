@@ -13,6 +13,59 @@
     <body>
     <!-- start wrapper -->
     <div class="wrapper">
+        <!-- start navbar --
+        <nav class="navbar navbar-expand-xl">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Massage</a></li>
+                    <li><a class="dropdown-item" href="#">Skin Care</a></li>
+                    <li><a class="dropdown-item" href="#">Body Care</a></li>
+                    <li><a class="dropdown-item" href="#">Nail Care</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Contact us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle the-lang" href="#" role="button" data-bs-toggle="dropdown">
+                      <img src="img/lang.svg" class="me-1">En
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                    <li><a class="dropdown-item" href="#">عربى</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button class="the-btn" type="button">Login</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!-- end navbar -->
         <!-- start navbar -->
         <nav class="navbar navbar-expand-xl">
           <div class="container-fluid">
@@ -22,6 +75,9 @@
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
               <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link logo-xl" href="javascript:void(0)"><img src="img/logo.png"></a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="javascript:void(0)">Home</a>
                 </li>
@@ -522,6 +578,39 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/jquery.3.7.1.min.js"></script>
+    <!-- start responsive menu -->
+    <script>
         
+    $(".navbar-toggler").click(function() {
+        $(".navbar-collapse").toggleClass('toggle-menu');
+        $(".navbar-toggler-icon").toggleClass('navbar-toggler-icon-2')
+    });
+     /*   
+    $(".navbar-toggler-icon-1").click(function() {
+        $(".navbar-collapse").addClass('toggle-menu');
+    });
+        
+    $(".navbar-toggler-icon-2").click(function() {
+        $(".navbar-collapse").removeClass('toggle-menu');
+    });*/
+        
+      
+    $(document).click(function() {
+        $(".navbar-collapse").removeClass('toggle-menu');
+        $(".navbar-collapse").removeClass('show');
+        $(".navbar-toggler-icon").removeClass('navbar-toggler-icon-2')
+    });
+        
+    $(".navbar-toggler,.navbar-collapse ul.navbar-nav").click(function(e) {
+        e.stopPropagation(); // This is the preferred method.
+        return false;        // This should not be used unless you do not want
+                             // any click events registering inside the div
+    });
+        
+    
+    </script>
+    <!-- end responsive menu -->    
+    
     </body>
 </html>

@@ -1,2 +1,41 @@
+/* start font */
+@font-face {
+  font-family: 'Dubai';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../webfonts/Dubai-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dubai';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/Dubai-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dubai';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../webfonts/Dubai-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dubai';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../webfonts/Dubai-Bold.ttf') format('truetype');
+}
+body{font-family: "Dubai", sans-serif;}
+.one-service h3{font-family: "Dubai", sans-serif;}
+.the-title2 h6{font-family: "Dubai", sans-serif;}
+.about-box h3{font-family: "Dubai", sans-serif;}
+/* end font */
 .snip1585 figcaption{padding: 0 20px 20px 5px;}
 .social-list li{margin-right: 0!important;margin-left: 0.5rem!important}
+.the-btn2 img{transform: rotate(180deg);}
+@media only screen and (max-width : 1200px) {
+    .navbar-collapse {
+        left: initial;right: -200px
+    }
+    .toggle-menu {
+        left: initial;right: 0;
+    }
+}
