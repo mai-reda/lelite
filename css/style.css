@@ -281,10 +281,11 @@ nav.navbar{margin: 20px auto 30px}
     border-top: 3px solid #38daca;
     border-radius: 0;
     text-align: center;
-    padding: 0
+    padding: 0;
 }
 .navbar-nav .dropdown-menu li:first-of-type .dropdown-item{padding-top: 13px}
 .navbar-nav .dropdown-menu li:last-of-type .dropdown-item{padding-bottom: 13px}
+.navbar-nav .nav-item:last-of-type .dropdown-menu{min-width: 90px}
 /* start responsive */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
