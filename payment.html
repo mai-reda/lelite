@@ -82,53 +82,237 @@
             <form>
                 <div class="row the-checkout">
                     <div class="col-xl-12">
-                        <h3>Checkout</h3>
+                        <h3>Payment</h3>
                     </div>
                     <div class="col-xl-8 col-lg-6">
-                        <div class="form-title">Contact Info</div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">Customer Name:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the name">
+                        <div class="payment-lg">
+                            <div class="form-title">Select Payment Method</div>
+                        <div class="payment-method">
+                            <div class="payment-method-header">
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" value="option1" checked>Credit Card
+                                  <label class="form-check-label"></label>
                                 </div>
+                                <img src="img/visa.svg" class="ms-auto">
                             </div>
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">Phone Number:</label>
-                                    <input type="text" class="form-control" placeholder="966 XXX XXX XXX">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">E-mail:</label>
-                                    <input type="text" class="form-control" placeholder="Example@example.com">
+                            <div class="payment-method-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Card number">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Name on card">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Expiration Date (MM/YY)">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="CVV">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-title">Address</div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">City:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the city name">
+                        <div class="payment-method">
+                            <div class="payment-method-header">
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" value="option1">Transfer
+                                  <label class="form-check-label"></label>
                                 </div>
+                                <img src="img/Transfer.svg" class="ms-auto">
                             </div>
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">District:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the name of the county">
+                        </div>
+                        <div class="payment-method">
+                            <div class="payment-method-header">
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" value="option1">Tamara
+                                  <label class="form-check-label"></label>
                                 </div>
+                                <img src="img/Tamara.svg" class="ms-auto">
                             </div>
-                            <div class="col-xl-12">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">Address:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the address">
+                        </div>
+                        <div class="payment-method">
+                            <div class="payment-method-header">
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" value="option1">Appla Pay
+                                  <label class="form-check-label"></label>
                                 </div>
+                                <img src="img/apple-pay.svg" class="ms-auto">
                             </div>
-                            <div class="col-xl-12 payment-btn">
-                                <button class="the-btn" type="button">Continue to payment</button>
+                        </div>
+                        <div class="payment-method">
+                            <div class="payment-method-header">
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" value="option1">Tabby Pay
+                                  <label class="form-check-label"></label>
+                                </div>
+                                <img src="img/tabby-pay.svg" class="ms-auto">
                             </div>
+                        </div>
+                        <div class="payment-method">
+                            <div class="payment-method-header">
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" name="optradio" value="option1">Mada
+                                  <label class="form-check-label"></label>
+                                </div>
+                                <img src="img/mada.svg" class="ms-auto">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="payment-sm">
+                            <div class="form-title">Select Payment Method</div>
+                            <!-- Nav pills -->
+<div class="payment-nav-pills">
+    <ul class="nav nav-pills">
+  <li class="nav-item me-3">
+    <a class="nav-link active" data-bs-toggle="pill" href="#home">
+        <img src="img/mastercard.svg" class="me-1">Credit card
+      </a>
+  </li>
+  <li class="nav-item me-3">
+    <a class="nav-link" data-bs-toggle="pill" href="#menu1">
+        <img src="img/Transfer.svg" class="me-1">Transfer
+      </a>
+  </li>
+  <li class="nav-item me-3">
+    <a class="nav-link" data-bs-toggle="pill" href="#menu2">
+        <img src="img/Tamara.svg" class="me-1">Tamara
+      </a>
+  </li>
+    <li class="nav-item me-3">
+    <a class="nav-link" data-bs-toggle="pill" href="#menu3">
+        <img src="img/apple-pay.svg" class="me-1">Apple Pay
+      </a>
+  </li>
+    <li class="nav-item me-3">
+    <a class="nav-link" data-bs-toggle="pill" href="#menu4">
+        <img src="img/tabby-pay.svg" class="me-1">Tabby Pay
+      </a>
+  </li>
+    <li class="nav-item me-3">
+    <a class="nav-link" data-bs-toggle="pill" href="#menu5">
+        <img src="img/mada.svg" class="me-1">Mada
+      </a>
+  </li>
+</ul>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="home">
+        <div class="row">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Card number">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Name on card">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="(MM/YY)">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="CVV">
+            </div>
+            <div class="col-12">
+                <button class="the-btn" type="button">Pay</button>
+            </div>
+        </div>
+    </div>
+  <div class="tab-pane container fade" id="menu1">
+    <div class="row">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Card number">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Name on card">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="(MM/YY)">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="CVV">
+            </div>
+            <div class="col-12">
+                <button class="the-btn" type="button">Pay</button>
+            </div>
+        </div>  
+  </div>
+    <div class="tab-pane container fade" id="menu2">
+    <div class="row">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Card number">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Name on card">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="(MM/YY)">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="CVV">
+            </div>
+            <div class="col-12">
+                <button class="the-btn" type="button">Pay</button>
+            </div>
+        </div>  
+  </div>
+    <div class="tab-pane container fade" id="menu3">
+    <div class="row">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Card number">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Name on card">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="(MM/YY)">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="CVV">
+            </div>
+            <div class="col-12">
+                <button class="the-btn" type="button">Pay</button>
+            </div>
+        </div>  
+  </div>
+    <div class="tab-pane container fade" id="menu4">
+    <div class="row">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Card number">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Name on card">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="(MM/YY)">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="CVV">
+            </div>
+            <div class="col-12">
+                <button class="the-btn" type="button">Pay</button>
+            </div>
+        </div>  
+  </div>
+    <div class="tab-pane container fade" id="menu5">
+    <div class="row">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Card number">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Name on card">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="(MM/YY)">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="CVV">
+            </div>
+            <div class="col-12">
+                <button class="the-btn" type="button">Pay</button>
+            </div>
+        </div>  
+  </div>
+</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6">
@@ -144,12 +328,18 @@
                             <div class="product-payment">
                                 <img src="img/checkout2.png" class="me-2">
                                 <div class="me-auto">
-                                    <p>Anti Stress Massage</p>
-                                    <span>1 HR</span>
+                                    <p>Pine Forest Original Recipe</p>
+                                    <span>Size : Large</span>
                                 </div>
                                 <div class="payment-price">250 SAR</div>
                             </div>
                             <div class="the-border"></div>
+                            <div class="discount-code">
+                                <div class="input-group mb-3 mt-3">
+                                  <input type="text" class="form-control" placeholder="Add Discount code">
+                                  <button class="btn" type="submit">Apply</button>
+                                </div>
+                            </div>
                             <div class="the-payment">
                                 <div class="me-auto">Subtotal</div>
                                 <span>350 SAR</span>
@@ -164,7 +354,7 @@
                                 <span>350 SAR</span>
                             </div>
                             <div>
-                                <button class="the-btn" type="button">Continue to payment</button>
+                                <button class="the-btn" type="button">Pay</button>
                             </div>
                         </div>
                     </div>
@@ -277,7 +467,7 @@
         
     
     </script>
-    <!-- end responsive menu -->    
+    <!-- end responsive menu --> 
     
     </body>
 </html>

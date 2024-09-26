@@ -13,6 +13,7 @@
     <body>
     <!-- start wrapper -->
     <div class="wrapper">
+        <div class="nav-shadow"></div>
         <!-- start navbar -->
         <nav class="navbar navbar-expand-xl">
           <div class="container-fluid">
@@ -320,7 +321,8 @@
         
     $(".navbar-toggler").click(function() {
         $(".navbar-collapse").toggleClass('toggle-menu');
-        $(".navbar-toggler-icon").toggleClass('navbar-toggler-icon-2')
+        $(".navbar-toggler-icon").toggleClass('navbar-toggler-icon-2');
+        $(".nav-shadow").toggleClass('nav-open');
     });
      /*   
     $(".navbar-toggler-icon-1").click(function() {
@@ -335,7 +337,8 @@
     $(document).click(function() {
         $(".navbar-collapse").removeClass('toggle-menu');
         $(".navbar-collapse").removeClass('show');
-        $(".navbar-toggler-icon").removeClass('navbar-toggler-icon-2')
+        $(".navbar-toggler-icon").removeClass('navbar-toggler-icon-2');
+        $(".nav-shadow").removeClass('nav-open');
     });
         
     $(".navbar-toggler,.navbar-collapse ul.navbar-nav").click(function(e) {

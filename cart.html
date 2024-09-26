@@ -81,75 +81,80 @@
         <div class="container-fluid">
             <form>
                 <div class="row the-checkout">
-                    <div class="col-xl-12">
-                        <h3>Checkout</h3>
-                    </div>
-                    <div class="col-xl-8 col-lg-6">
-                        <div class="form-title">Contact Info</div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">Customer Name:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the name">
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">Phone Number:</label>
-                                    <input type="text" class="form-control" placeholder="966 XXX XXX XXX">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">E-mail:</label>
-                                    <input type="text" class="form-control" placeholder="Example@example.com">
-                                </div>
-                            </div>
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="d-flex">
+                            <h3>Cart</h3>
+                            <a href="#" class="the-btn2 the-btn4 ms-auto"><img src="img/delete.svg" class="me-2">Delete</a>
                         </div>
-                        <div class="form-title">Address</div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">City:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the city name">
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">District:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the name of the county">
-                                </div>
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="mb-3 mt-3">
-                                    <label class="form-label">Address:</label>
-                                    <input type="text" class="form-control" placeholder="Enter the address">
-                                </div>
-                            </div>
-                            <div class="col-xl-12 payment-btn">
-                                <button class="the-btn" type="button">Continue to payment</button>
-                            </div>
+                        <div class="table-responsive-sm the-table">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th width="30px"><input class="form-check-input" type="checkbox"></th>
+                                <th>
+                                    Product  
+                                </th>
+                                <th class="text-center quantity-col">Quantity</th>
+                                <th class="text-end">Price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input class="form-check-input" type="checkbox"></td>
+                                <td>
+                                    <div class="product-payment">
+                                        <img src="img/checkout1.png" class="me-2">
+                                        <div class="me-auto">
+                                            <p>Anti Stress Massage</p>
+                                            <span>1 HR</span>
+                                            <div class="input-group the-quantity">
+                                                <span class="input-group-text">+</span>
+                                                <input type="text" class="form-control" placeholder="01">
+                                                <span class="input-group-text">-</span>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </td>
+                                <td class="quantity-col">
+                                    <div class="input-group the-quantity">
+                                        <span class="input-group-text">+</span>
+                                        <input type="text" class="form-control" placeholder="01">
+                                        <span class="input-group-text">-</span>
+                                    </div>  
+                                </td>
+                                <td class="text-end"><span class="table-price">250 SAR</span></td>
+                              </tr>
+                              <tr>
+                                <td><input class="form-check-input" type="checkbox"></td>
+                                <td>
+                                    <div class="product-payment">
+                                        <img src="img/checkout2.png" class="me-2">
+                                        <div class="me-auto">
+                                            <p>Anti Stress Massage</p>
+                                            <span>1 HR</span>
+                                            <div class="input-group the-quantity">
+                                                <span class="input-group-text">+</span>
+                                                <input type="text" class="form-control" placeholder="01">
+                                                <span class="input-group-text">-</span>
+                                            </div> 
+                                        </div>
+                                    </div>   
+                                </td>
+                                <td class="quantity-col">
+                                    <div class="input-group the-quantity">
+                                        <span class="input-group-text">+</span>
+                                        <input type="text" class="form-control" placeholder="01">
+                                        <span class="input-group-text">-</span>
+                                    </div>  
+                                </td>
+                                <td class="text-end"><span class="table-price">100 SAR</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6">
+                    <div class="col-xl-4 col-lg-4">
                         <div class="continue-payment">
-                            <div class="product-payment">
-                                <img src="img/checkout1.png" class="me-2">
-                                <div class="me-auto">
-                                    <p>Anti Stress Massage</p>
-                                    <span>1 HR</span>
-                                </div>
-                                <div class="payment-price">250 SAR</div>
-                            </div>
-                            <div class="product-payment">
-                                <img src="img/checkout2.png" class="me-2">
-                                <div class="me-auto">
-                                    <p>Anti Stress Massage</p>
-                                    <span>1 HR</span>
-                                </div>
-                                <div class="payment-price">250 SAR</div>
-                            </div>
-                            <div class="the-border"></div>
                             <div class="the-payment">
                                 <div class="me-auto">Subtotal</div>
                                 <span>350 SAR</span>
@@ -164,7 +169,7 @@
                                 <span>350 SAR</span>
                             </div>
                             <div>
-                                <button class="the-btn" type="button">Continue to payment</button>
+                                <button class="the-btn" type="button">Checkout Now</button>
                             </div>
                         </div>
                     </div>

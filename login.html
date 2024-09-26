@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lelite</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="css/bootstrap.rtl.min.css">-->
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet" href="css/style-rtl.css">-->
+    </head>
+    <body>
+    <!-- start wrapper -->
+    <div class="wrapper">
+        <div class="container-fluid the-login">
+            <div class="row">
+                <div class="col-lg-5 login-content">
+                    <div class="login-logo"><img src="img/logo2.png"></div>
+                    <h4>Login</h4>
+                    <p>Fill the information to Login</p>
+                    <form>
+                      <div class="mb-3 mt-3">
+                        <label class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" placeholder="example@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Password:</label>
+                        <input type="password" class="form-control" placeholder="password">
+                      </div>
+                      <div class="form-check mb-3 the-remember">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"> Keep me Loged in
+                        </label>
+                      </div>
+                      <div class="login-btn">
+                        <button type="submit" class="btn btn-primary">Sign in</button>  
+                      </div>
+                      <div class="login-google login-google-sm">
+                        <button type="submit" class="btn btn-primary"><img src="img/google.svg" class="me-2">Sign in with google</button>  
+                      </div>
+                      <div class="donot">Don’t have account? <a href="#">Creat Account</a></div>
+                      <div class="or">
+                          <div class="ms-auto"></div><span>OR</span><div class="me-auto"></div>
+                        </div>
+                      <div class="login-google">
+                        <button type="submit" class="btn btn-primary"><img src="img/google.svg" class="me-2">Sign in with google</button>  
+                      </div>
+                    </form>
+                </div>
+                <div class="col-lg-7 login-img"><img src="img/login.png"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end wrapper -->
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.3.7.1.min.js"></script>
+    <!-- start responsive menu -->
+    <script>
+        
+    $(".navbar-toggler").click(function() {
+        $(".navbar-collapse").toggleClass('toggle-menu');
+        $(".navbar-toggler-icon").toggleClass('navbar-toggler-icon-2');
+        $(".nav-shadow").toggleClass('nav-open');
+    });
+     /*   
+    $(".navbar-toggler-icon-1").click(function() {
+        $(".navbar-collapse").addClass('toggle-menu');
+    });
+        
+    $(".navbar-toggler-icon-2").click(function() {
+        $(".navbar-collapse").removeClass('toggle-menu');
+    });*/
+        
+      
+    $(document).click(function() {
+        $(".navbar-collapse").removeClass('toggle-menu');
+        $(".navbar-collapse").removeClass('show');
+        $(".navbar-toggler-icon").removeClass('navbar-toggler-icon-2');
+        $(".nav-shadow").removeClass('nav-open');
+    });
+        
+    $(".navbar-toggler,.navbar-collapse ul.navbar-nav").click(function(e) {
+        e.stopPropagation(); // This is the preferred method.
+        return false;        // This should not be used unless you do not want
+                             // any click events registering inside the div
+    });
+        
+    
+    </script>
+    <!-- end responsive menu -->    
+    
+    </body>
+</html>
