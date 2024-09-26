@@ -393,6 +393,7 @@ nav.navbar{margin: 20px auto 30px}
     margin-top: 5px;font-size: 20px
 }
 .payment-sm{display: none}
+.product-payment .the-quantity{display: none}
 /* start responsive */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -567,6 +568,9 @@ nav.navbar{margin: 20px auto 30px}
     }
     .payment-sm .the-btn{width: 100%;font-size: 20px;margin-top: 30px}
     .payment-sm .form-control{background-color: #FAFAFA;border: 1px solid #E8E8E8;margin-top: 20px}
+    .product-payment .the-quantity{display: flex}
+    .the-table .form-check-input{width: 12px;height: 12px}
+    .product-payment span{font-size: 12px}
 }
 
 /* Extra Small Devices, Phones */ 
@@ -578,6 +582,8 @@ nav.navbar{margin: 20px auto 30px}
         font-size: 20px;
         line-height: 20px;
     }
+    .the-quantity{max-width: 100px}
+    .product-payment p{font-size: 12px}
 }
 
 @media only screen and (max-width : 380px) {
