@@ -35,7 +35,7 @@ body{font-family: "Nexa", sans-serif;}
 .about-box h3{font-family: 'Brilon_1.1';font-size: 24px;font-weight: 600;color: #231F1E;margin: 25px 0}
 /* end font2 */
 
-.wrapper{width: 100%;overflow-x: hidden;}
+.wrapper{width: 100%;overflow-x: hidden;position: relative}
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
     padding-left: 40px;padding-right: 40px
 }
@@ -329,7 +329,7 @@ nav.navbar{margin: 20px auto 30px}
 .the-checkout h3{font-size: 32px}
 .form-title{color: #535353;font-size: 20px;margin-top: 20px;margin-bottom: 15px}
 .form-label{font-size: 16px;font-weight: 700}
-.form-control{min-height: 50px;border-radius: 0}
+.form-control{min-height: 50px;border-radius: 0;border: 1px solid #e8e8e8}
 .continue-payment{border: 1px solid #E8E8E8;padding: 20px}
 .product-payment img{height: 64px}
 .product-payment{display: flex;margin-bottom: 20px}
@@ -342,6 +342,57 @@ nav.navbar{margin: 20px auto 30px}
 .continue-payment .the-btn{padding: 13px 25px;font-size: 20px;display: block;width: 100%;margin-top: 40px}
 .payment-btn{display: none}
 .form-control:focus{box-shadow: none;border-color: #ced4da}
+.nav-shadow{
+    width: 100%;height: 100%;position: absolute;top: 0;right: 0;bottom: 0;
+    z-index: 1;background: rgb(0 0 0 / 17%);display: none
+}
+.nav-shadow.nav-open{display: block}
+.the-btn4{border: 1px solid #E8E8E8;padding: 10px 20px}
+.table-price{font-size: 20px;font-weight: 700;color: #000}
+.the-table{margin-top: 20px}
+.the-table th{color: #535353;font-size: 20px}
+.table>tbody tr{border: 1px solid rgb(255 255 255 / 0%)}
+.table>tbody tr td{padding-top: 15px}
+.the-quantity{text-align: center;border-radius: 0;border: 1px solid #E8E8E8;max-width: 160px;margin: auto}
+.the-quantity .input-group-text{background-color: #fff;border: 0;font-size: 25px;cursor: pointer}
+.the-quantity .form-control{border: 0;text-align: center}
+.the-table .form-check-input{width: 20px;height: 20px}
+.login-img img{width: 100%;margin-top: 40px}
+.login-btn .btn{
+    width: 100%;background-color: #D9D9D9;color: #fff;border-radius: 0;
+    padding: 20px 5px;border: 1px solid #D9D9D9
+}
+.login-btn .btn:hover,.login-btn .btn:focus{background-color: #D9D9D9;color: #fff;border: 1px solid #D9D9D9}
+.donot a{color: #38DACA}
+.donot{margin: 15px 0}
+.or{display: flex;align-items: center;margin-bottom: 10px}
+.or span{background-color: #fff;padding: 15px;width: 100px;text-align: center;color: #30303080}
+.or div{height: 1px;background: #30303080;padding: 0 20px;width: 35%}
+.login-google .btn{
+    width: 100%; border: 1px solid #EBEBEB;background-color: #F8F8F8;color: #231F1E;
+    border-radius: 0;padding: 20px 5px;
+}
+.login-google .btn:hover,.login-google .btn:focus{
+    border: 1px solid #EBEBEB;background-color: #F8F8F8;color: #231F1E;
+}
+.login-content h4{font-size: 32px}
+.login-logo img{margin: 120px 0 20px}
+.login-google-sm{display: none}
+.form-check-input:checked {
+    background-color: #38DACA;
+    border-color: #38DACA;
+}
+.discount-code .input-group{gap:20px}
+.discount-code .form-control{background-color: #FAFAFA;border: 1px solid #E8E8E8}
+.discount-code .btn{border: 1px solid #E8E8E8;border-radius: 0}
+.payment-method{border: 1px solid #E8E8E8;margin-bottom: 20px}
+.payment-method-header{padding: 15px;font-size: 20px;border-bottom: 1px solid #E8E8E8;display: flex}
+.payment-method-body{padding: 15px}
+.payment-method-body .form-control{
+    margin-bottom: 15px;background-color: #FAFAFA;border: 1px solid #E8E8E8;
+    margin-top: 5px;font-size: 20px
+}
+.payment-sm{display: none}
 /* start responsive */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -357,16 +408,16 @@ nav.navbar{margin: 20px auto 30px}
         background-color: #fbfbfb;min-height: 100vh;transition: left 300ms;
     }
     .toggle-menu {
-        left: 0;border: 1px solid #eee;width: 200px;text-align: center;border-top: 0
+    left: 0;border: 1px solid #eee;width: 200px;padding: 0 12px;border-top: 0
     }
-    .toggle-menu .the-btn{margin: 5px auto;font-size: 18px}
+    .toggle-menu .the-btn{margin: 5px auto;font-size: 18px;width: 100%}
     .logo-xl{display: block}
     .navbar-toggler-icon-2 {
         background-image: url(../img/close.png);
         background-repeat: no-repeat;
         background-size: 63%;
     }
-    .navbar-nav .dropdown-menu{text-align: center;border-top: 1px solid #38daca}
+    .navbar-nav .dropdown-menu{text-align: initial;border-top: 1px solid #38daca}
     .why-us h4{margin-top: 0;font-size: 25px}
     .the-text {font-size: 19px;line-height: 28px;}
     .article-title h2{font-size: 25px}
@@ -407,6 +458,9 @@ nav.navbar{margin: 20px auto 30px}
         margin-top: 10px !important;
         margin-bottom: 10px ! IMPORTANT;
     }
+    .login-img{display: none}
+    .login-content{padding-bottom: 80px}
+    .login-logo img{margin: 30px 0 20px}
 }
 
 /* Small Devices, Tablets */
@@ -483,6 +537,36 @@ nav.navbar{margin: 20px auto 30px}
     .main-blog .snip1585.one-blog h5{font-size: 20px;line-height: 30px;}
     .main-blog .snip1585.one-blog h6{font-size: 10px}
     .main-blog .snip1585.one-blog span{font-size: 10px}
+    .quantity-col{display: none}
+    .the-table .product-payment p{margin-top: 0;margin-bottom: 1px}
+    .the-quantity .input-group-text{line-height: 10px;height: 30px;font-size: 20px}
+    .the-quantity .form-control{
+        line-height: 10px;height: 30px;min-height: 30px;font-size: 12px;
+        padding-left: 3px;padding-right: 3px
+    }
+    .the-quantity{max-width: 120px;margin: 5px 0 0}
+    .table-price{font-size: 16px}
+    .the-table th{font-size: 12px}
+    .the-table{border-bottom: 1px dashed #E8E8E8}
+    .login-logo{text-align: center}
+    .login-content h4{font-size: 24px}
+    .the-remember{display: none}
+    .or{display: none}
+    .login-btn .btn{background-color: #38DACA;color: #fff}
+    .login-google{display: none}
+    .login-google-sm{display: block;margin-top: 15px}
+    .login-btn{margin-top: 40px}
+    .payment-lg{display: none}
+    .payment-sm{display: block}
+    .payment-sm .form-title{font-size: 18px;font-weight: 700}
+    .payment-sm .nav-pills{width: 1150px;margin-bottom: 15px}
+    .payment-nav-pills{overflow-x: scroll;padding-bottom: 5px}
+    .payment-sm .nav-pills .nav-link{color: #000;border: 1px solid #E8E8E8;padding-top: 15px;padding-bottom: 15px}
+    .payment-sm .nav-pills .nav-link.active,.payment-sm .nav-pills .show>.nav-link{
+        background-color: #38DACA40;border: 1px solid #38DACA;border-radius: 0;color: #000;
+    }
+    .payment-sm .the-btn{width: 100%;font-size: 20px;margin-top: 30px}
+    .payment-sm .form-control{background-color: #FAFAFA;border: 1px solid #E8E8E8;margin-top: 20px}
 }
 
 /* Extra Small Devices, Phones */ 
