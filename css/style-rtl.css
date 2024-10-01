@@ -35,6 +35,7 @@ body{font-family: "Dubai", sans-serif;}
 .main-inner-header h3{border-left: 0;padding-left: initial;border-right: 4px solid #38DACA;padding-right: 5px}
 .profile-edit{right: 25px;left: initial}
 .profile-list2 a{margin-left: 40px;margin-right: initial}
+.snip1585.one-blog h6{margin-left: 50px;margin-right: initial}
 @media only screen and (max-width : 1200px) {
     .navbar-collapse {
         left: initial;right: -200px

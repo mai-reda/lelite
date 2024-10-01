@@ -55,7 +55,7 @@ a:hover{color: #38DACA}
 .the-title h6{color:#238E83;font-size: 16px;font-weight: 700}
 .the-title h5{font-size: 32px;font-weight: 400;text-transform: capitalize}
 .one-service{text-align: center;margin-bottom: 25px}
-.one-service h3{margin: 15px auto 20px}
+.one-service h3{margin: 15px auto 25px}
 .the-btn2{border: 1px solid #535353;padding: 10px;text-decoration: none;color: #535353;}
 .the-btn2:hover{color: #535353;}
 .the-services > div:nth-child(even){padding-top: 60px}
@@ -366,7 +366,7 @@ nav.navbar{margin: 20px auto 30px}
 .donot a{color: #38DACA}
 .donot{margin: 15px 0}
 .or{display: flex;align-items: center;margin-bottom: 10px}
-.or span{background-color: #fff;padding: 15px;width: 100px;text-align: center;color: #30303080}
+.or span{background-color: #fff;padding: 10px 15px;width: 100px;text-align: center;color: #30303080}
 .or div{height: 1px;background: #30303080;padding: 0 20px;width: 35%}
 .login-google .btn{
     width: 100%; border: 1px solid #EBEBEB;background-color: #F8F8F8;color: #231F1E;
@@ -376,7 +376,7 @@ nav.navbar{margin: 20px auto 30px}
     border: 1px solid #EBEBEB;background-color: #F8F8F8;color: #231F1E;
 }
 .login-content h4{font-size: 32px}
-.login-logo img{margin: 120px 0 20px}
+.login-logo img{margin: 50px 0 20px;margin: 20px 0 10px}
 .login-google-sm{display: none}
 .form-check-input:checked {
     background-color: #38DACA;
@@ -482,6 +482,17 @@ nav.navbar{margin: 20px auto 30px}
 }
 .order-btn{margin: 40px 0 20px}
 .order-item .order-product .payment-price{display: none}
+.login-img{
+        height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin:20px 0;
+}
+.login-img img{min-height: 100%}
+.login-content{padding-bottom: 20px}
+.login-logo-edit{margin:40px 0 15px}
 /* start responsive */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -703,6 +714,7 @@ nav.navbar{margin: 20px auto 30px}
     .order-item .order-product .payment-price{display: block;font-size: 14px;font-weight: 400;margin-top: 5px}
     .order-btn a{font-size: 16px;padding: 10px}
     .order-btn{margin: 20px 0 5px}
+    .login-logo-edit{margin: 0}
 }
 
 /* Extra Small Devices, Phones */ 
